@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Edit Payment Information - PayPal™</title>
-		<!-- STEP 6: link or @import the provided CSS to style the form -->
+		
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
@@ -15,12 +15,11 @@
             <!-- STEP 1: Set the action attribute for the form -->
             <form id="edit_payment_info" method="get">
                 <input type="hidden" name="form_sent" value="1" action="process-form.php" />
-                <!-- STEP 5: Add a fieldset and legend element to encapsulate the billing address fields -->
+            
 								<fieldset>
 									<legend>Personal Information</legend>
-                <!-- STEP 2: Build an input element for First Name and also for Last Name -->
-                <!-- Include type, name, id, required, size, maxlength, and placeholder attributes -->
-                    <div>
+               
+                
 											<label for="fname"> First Name </label>
 											<input type="text" name="fname" id="fname" maxlength= "25" size="20" required = "required" placeholder="type first name here" />
                     </div>
@@ -28,7 +27,7 @@
 											<label for= "lname"> Last Name </label>
 											<input type="text" name="lname" id="lname" Maxlength="25" size="20" required= "required" placeholder="type last name here">
                     </div>
-                <!-- STEP 3: Add label elements for each of the above input elements -->
+               
                     <div>
                         <label for="address">Address Line 1</label>
                         <input id="address" type="text" name="address" required />
@@ -64,12 +63,12 @@
                         <label for="email">Email</label>
                         <input id="email" type="email" name="email" />
                     </div>
-                    <!-- STEP 10: Add an input for password -->
+                  
                     <div>
                         <label for="password">Password</label>
 												<input type="password" name="pword" id="pword" maxlength= "25" size="20" required = "required" placeholder="password" />
 					</div>
-                    <!-- STEP 11: Add an input for a file attachment -->
+                   
                     <div>
                         <label for="avatar">Profile Picture</label>
 												<input type="file" name = "avatar" id="avatar" />
@@ -130,7 +129,7 @@
                     <legend>Keep Me Informed</legend>
                     <input type="checkbox" name="marketing[]" id="marketing1" value="newsletter" />
                     <label for="marketing1">Newsletter</label>
-                    <!-- STEP 9: Add another check box with a unique id and the same name as the above input -->
+                   
 										<input type="checkbox" name="marketing[]" id="marketing2" value="email_newsletter" />
                     <label for="marketing2">Email Newsletter</label>
 				</fieldset>
@@ -159,8 +158,8 @@
 												<input type="search"/>
 					</div>
                 </fieldset>
-                <!-- STEP 4: Add a button or input element to function as the submit button -->
-								<button type "submit"> Save Settings</button>
+               
+						<button type "submit"> Save Settings</button>
             </form>
         </main>
         <footer>
